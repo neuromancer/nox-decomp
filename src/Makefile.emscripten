@@ -1,0 +1,13 @@
+CC = emcc
+CXX = em++
+CFLAGS = -O3 -g -fno-strict-aliasing -fno-strict-overflow -s USE_SDL=2 -s CASE_INSENSITIVE_FS=1 -s TOTAL_MEMORY=134217728 -s EMULATE_FUNCTION_POINTER_CASTS=1 -s BINARYEN_TRAP_MODE=clamp -s ASSERTIONS=2
+CXXFLAGS = -O3 -g
+LDFLAGS = --pre-js pre.js
+
+.PHONY: clean
+
+out.html: GAME1.o GAME2.o GAME3.o GAME4.o GAME5.o GAME_data.o compat.o compat_mss.o cdrom.o draw.o imm.o input.o main.o movie.o sm.o string.o win.o
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+
+clean:
+	$(RM) *.o out.html

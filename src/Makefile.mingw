@@ -1,0 +1,11 @@
+CFLAGS = -O3 -g -fno-strict-aliasing -fno-strict-overflow -m32
+CXXFLAGS = -O3 -g -m32
+LDFLAGS = -lSDL2 -lglew32 -lopenal -lopengl32 -lws2_32 -lwinmm
+
+.PHONY: clean
+
+out: GAME1.o GAME2.o GAME3.o GAME4.o GAME5.o GAME_data.o compat_mss.o cdrom.o draw.o imm.o input.o main.o movie.o sm.o string.o win.o
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+
+clean:
+	$(RM) *.o out.exe
