@@ -51753,11 +51753,11 @@ void sub_43E9F0()
 {
   if ( *(int *)&byte_587000[93944] != -1 )
   {
-    AIL_stop_timer(*(_DWORD *)&byte_587000[93944]);
-    AIL_release_timer_handle(*(_DWORD *)&byte_587000[93944]);
+    //AIL_stop_timer(*(_DWORD *)&byte_587000[93944]);
+    //AIL_release_timer_handle(*(_DWORD *)&byte_587000[93944]);
     *(_DWORD *)&byte_587000[93944] = -1;
   }
-  AIL_shutdown();
+  //AIL_shutdown();
 }
 // 5813D0: using guessed type int __stdcall AIL_release_timer_handle(_DWORD);
 // 5813D4: using guessed type int __stdcall AIL_stop_timer(_DWORD);
@@ -51899,8 +51899,8 @@ int __cdecl sub_43ECB0(int a1)
   int v1; // esi
 
   v1 = *(_DWORD *)(a1 + 272);
-  if ( *(_DWORD *)(v1 + 8) )
-    AIL_release_sample_handle(*(_DWORD *)(v1 + 8));
+  //if ( *(_DWORD *)(v1 + 8) )
+  //  AIL_release_sample_handle(*(_DWORD *)(v1 + 8));
   if ( *(_DWORD *)(v1 + 20) )
     free(*(LPVOID *)(v1 + 20));
   if ( *(_DWORD *)(v1 + 24) )
