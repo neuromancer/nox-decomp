@@ -3,7 +3,7 @@
 **Note**, Nox-Decomp requires an original copy of Nox. None of the Nox game assets are provided by this project. To get a legitimate copy of the game assets, please refer to the [GoG release of Nox](https://www.gog.com/game/nox).
 
 
-The original code comes from the [playnox.xyz](playnox.xyz) website. A copy of the original source code is permanently archived [here](https://web.archive.org/web/20191104220905/https://playnox.xyz/public_v1.zip). The code had some small modification to run it in Linux.
+The original code comes from the [playnox.xyz](https://playnox.xyz) website. A copy of the original source code is permanently archived [here](https://web.archive.org/web/20191104220905/https://playnox.xyz/public_v1.zip). The code had some small modification to run it in Linux.
 
 # Building from source
 
@@ -22,6 +22,8 @@ mv app/* .
 ```
 
 # Screenshots
+
+![](https://github.com/neuromancer/nox-decomp/blob/master/screenshots/alpha.png)
 
 # Known issues
 
