@@ -26,10 +26,10 @@ mv app/* .
 
 # Known issues
 
-* [ ] "Solo" game fails to start ("This game is only available in a primary installation")
-* [ ] All graphics are totally corrupted in 8-bit color mode.
-* [ ] Pointer is corrupted in 16-bit color mode.
-* [ ] Crashes at exit.
+* "Solo" game fails to start ("This game is only available in a primary installation")
+* All graphics are totally corrupted in 8-bit color mode.
+* Mouse pointer is corrupted in 16-bit color mode.
+* Can't play demo.
 
 # License
 
