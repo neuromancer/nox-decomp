@@ -2,11 +2,34 @@
 
 **Note**, Nox-Decomp requires an original copy of Nox. None of the Nox game assets are provided by this project. To get a legitimate copy of the game assets, please refer to the [GoG release of Nox](https://www.gog.com/game/nox).
 
+I am not the author of this code. It comes from the [playnox.xyz](https://playnox.xyz) website. A copy of the original source code is permanently archived [here](https://web.archive.org/web/20191104220905/https://playnox.xyz/public_v1.zip). I just did some small modifications to properly run it in Linux.
 
-The original code comes from the playnox.xyz website. A copy of the original source code is permanently archived [here](https://web.archive.org/web/20191104220905/https://playnox.xyz/public_v1.zip). The code had some small modification to run it in Linux.
+# Screenshots
 
-# Installing
+![](https://github.com/neuromancer/nox-decomp/blob/master/screenshots/alpha.png)
 
+# Building from source
+
+```
+cd build
+cmake ..
+cmake --build . -j $(nproc)
+```
+
+# Running the game
+
+```
+innoextract setup_nox_2.0.0.20.exe
+mv app/* .
+./src/out
+```
+
+# Known issues
+
+* [ ] "Solo" game fails to start ("This game is only available in a primary installation")
+* [ ] All graphics are totally corrupted in 8-bit color mode.
+* [ ] Pointer is corrupted in 16-bit color mode.
+* [ ] Crashes at exit.
 
 # License
 
@@ -15,7 +38,6 @@ Regarding this code, the author [indicated that](https://www.reddit.com/r/linux_
 > I would not consider this to be FOSS (free and open-source software). My goal was to show that this type of effort is now possible with modern tools. Also, for context, Nox has been abandoned by its creators and only runs on modern Windows thanks to community patches.
 
 Following the [devilution](https://github.com/diasurgical/devilution) project, I think Public Domain is the best license for this.
-
 
 # F.A.Q.
 
@@ -27,6 +49,12 @@ No, you'll need access to the data from the original game. If you don't have an 
 
 That's a tricky question. Under the DMCA, reverse-engineering has exceptions for the purpose of documentation and interoperability. Nox-Decomp provides the necessary documentation needed to achieve the latter. However, it falls into an entirely gray area. The real question is whether or not  Electronic Arts deems it necessary to take action.
 
+# Credits
+- Westwood Studios
+- [/u/awesie](https://www.reddit.com/u/awesie)
+- neuromancer (for some Linux fixes)
+
+Are you the one that should be mentioned here? Let me know I will add your name. Also, if you are interested in continue this project, I can give you administrative access to this repository.
 
 # Legal
 Nox-Decomp is released to the Public Domain. The documentation and function provided by Nox-Decomp may only be utilized with assets provided by ownership of Nox.
