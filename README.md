@@ -4,6 +4,10 @@
 
 I am not the author of this code. It comes from the [playnox.xyz](https://playnox.xyz) website. A copy of the original source code is permanently archived [here](https://web.archive.org/web/20191104220905/https://playnox.xyz/public_v1.zip). I just did some small modifications to properly run it in Linux.
 
+# Screenshots
+
+![](https://github.com/neuromancer/nox-decomp/blob/master/screenshots/alpha.png)
+
 # Building from source
 
 ```
@@ -19,10 +23,6 @@ innoextract setup_nox_2.0.0.20.exe
 mv app/* .
 ./src/out
 ```
-
-# Screenshots
-
-![](https://github.com/neuromancer/nox-decomp/blob/master/screenshots/alpha.png)
 
 # Known issues
 
